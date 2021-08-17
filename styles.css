@@ -1,0 +1,94 @@
+html, body{
+margin: 0;
+padding:0;
+overflow-x: hidden;
+height: 100vh;
+width:100%;
+background-color: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5));
+}
+
+body{
+text-align: center;
+background-image: url(https://cdn.pixabay.com/photo/2017/09/28/21/56/print-2797178__340.jpg); 
+background-size:cover;
+background-position: center;
+font-family: sans-serif;
+background-repeat: no-repeat;
+}
+
+.contact-title{
+margin-top: 100px;
+color: #fff;
+text-transform: uppercase;
+transition: all 4s ease-in-out;
+}
+
+.contact-title h1{
+font-size: 32px;
+line-height: 10px;
+}
+
+.contact-title h2{
+font-size: 10px;
+}
+
+form{
+margin-top: 50px;
+transition: all 4s ease-in-out;
+}
+
+.form-control{
+width: 600px;
+background: transparent;
+border: none;
+outline: none;
+border-bottom: 1px solid gray;
+color: #fff;
+font-size: 18px;
+margin-bottom: 16px;
+}
+
+input{
+height: 45px;
+}
+
+input::placeholder { 
+    color: rgba(255, 255, 255, 0.815) !important;
+    opacity: 1;
+}
+
+form .textarea{
+padding-bottom: 70px;
+}
+
+textarea::placeholder{
+    color: rgba(255, 255, 255, 0.815) !important;
+    opacity: 1;
+}
+
+form .submit{
+background: #ff5722;
+border-color: transparent;
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 2px;
+height: 50px;
+margin-top: 20px;
+}
+
+form .submit:hover{
+background-color: #f44336;
+cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+    .contact-title h1{
+        font-size: 25px;
+        }
+
+    .form-control{
+        width: 300px;
+
+        }
+}
